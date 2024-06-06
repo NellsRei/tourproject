@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="/dist/tours.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>VOYAGE ON</h1></a>
+        <div class="headeritems">
+            <a href="tour.html">Tour Listing</a>
+            <a href="hotel.html">Hotel Listing</a>
+            <a href="booking.html">Book With Us</a>
+        </div>
+        <p class="username"></p>
+        <button id="deleteuser">Delete Account</button>
+    </header>
+    <div class="tourtext">
+        <p>Select a tour and see the available hotels. Book with us today and get to enjoy a beautiful vacation </p>
+        <button id="addtourbtn" class="tourplus">Add tour</button>
+    </div>
+    <div class="tourerr" id="tourmessage"></div>
+    <div class="bookdiv" id="bookdiv"></div>
+    <div class="tours">
+        <!-- <div class="tourscards">
+            <div class="toursimg">
+                <img src="https://cdn.pixabay.com/photo/2020/02/06/18/43/santorini-4825173_640.jpg" alt="">
+            </div>
+            <div id="pin"><img src="/img/pin-location.png" alt="" class="pin"><h2>Santorini Tour</h2></div>
+            <p>Santorini,Greece</p>
+            <div id="pin"><img src="img/location_for_desc.png" alt="" class="pin"><p>Description: Santorini, Greece is a beautiful city with beautiful buildings and clear oceans</p></div>
+            <p>Price:100,000ksh</p>
+            <a href="booking.html">Book Tour</a>
+        </div>
+        <div class="tourscards">
+            <div class="toursimg">
+                <img src="https://cdn.pixabay.com/photo/2020/02/06/18/43/santorini-4825173_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2020/10/14/19/49/santorini-5655299_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2015/08/24/20/11/greece-905559_640.jpg" alt="" srcset="">
+            </div>
+            <div id="pin"><img src="/img/pin-location.png" alt="" class="pin"><h2>Santorini Tour</h2></div>
+            <div id="pin"><img src="img/location_for_desc.png" alt="" class="pin"><p>Description: Santorini, Greece is a beautiful city with beautiful buildings and clear oceans</p></div>
+            <p>Price:100,000ksh</p>
+            <a href="booking.html">Book Tour</a>
+        </div> -->
+    </div>
+    <!-- addtourform -->
+    <div id="addTourForm" style="display: none;">
+        <p><u><strong>ADD TOUR FORM</strong></u></p>
+        <input type="hidden" id="addTourId" required>
+        <label for="addTourName">Name:</label>
+        <input type="text" id="addTourName" required>
+        <label for="addTourDestination">Destination:</label>
+        <input type="text" id="addTourDestination" required>
+        <label for="addTourDescription">Description:</label>
+        <input type="text" id="addTourDescription" required>
+        <label for="addTourPrice">Price:</label>
+        <input type="text" id="addTourPrice" required>
+        <label for="addTourImage">Image URL:</label>
+        <input type="text" id="addTourImage" required>
+        <button id="submitAddTour">AddTour</button>
+        <div id="addTourMessage"></div>
+    </div>
+    <!-- Update Tour Form (hidden by default) -->
+    <div id="updateTourForm" style="display: none;">
+        <p><u><strong>UPDATE TOUR FORM</strong></u></p>
+        <input type="hidden" id="updateTourId">
+        <label for="updateTourName">Name:</label>
+        <input type="text" id="updateTourName" required>
+        <label for="updateTourDestination">Destination:</label>
+        <input type="text" id="updateTourDestination" required>
+        <label for="updateTourDescription">Description:</label>
+        <input type="text" id="updateTourDescription" required>
+        <label for="updateTourPrice">Price:</label>
+        <input type="text" id="updateTourPrice" required>
+        <label for="updateTourImage">Image URL:</label>
+        <input type="text" id="updateTourImage" required>
+        <button id="submitUpdateTour">Update Tour</button>
+        <div id="updateTourMessage"></div>
+    </div>
+    
+</body>
+</html>

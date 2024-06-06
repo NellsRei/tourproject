@@ -1,0 +1,22 @@
+{
+  "Hotel": [
+    {
+      "id": "1",
+      "name": "Santorini",
+      "location": "Santorini",
+      "userrating": "5"
+    },
+    {
+      "id": "56",
+      "name": "Paris",
+      "location": "Paris",
+      "userrating": "3"
+    },
+    {
+      "id": 800,
+      "name": "Paris",
+      "location": "Paris",
+      "userrating": "3"
+    }
+  ]
+}

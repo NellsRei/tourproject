@@ -1,0 +1,35 @@
+{
+  "Users": [
+    {
+      "id": "",
+      "username": "",
+      "email": "",
+      "tour": [],
+      "role": ""
+    },
+    {
+      "id": "1",
+      "username": "Nelly",
+      "email": "gichohinelly386@gmail.com",
+      "password": "qwerty1234",
+      "booking": [],
+      "role": "admin"
+    },
+    {
+      "id": "11",
+      "username": "Jane-Doe",
+      "email": "Nelly.Gichohi@teach2give.com",
+      "password": "12345678",
+      "booking": [],
+      "role": "user"
+    },
+    {
+      "id": "111",
+      "username": "Jonathan",
+      "email": "jonathan.ndambuki@teach2give.com",
+      "password": "2345",
+      "booking": [],
+      "role": "user"
+    }
+  ]
+}

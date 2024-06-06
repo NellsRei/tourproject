@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/dist/booking.js" defer></script>
+</head>
+<body class="fform">
+    <div class="hotelmessage"></div>
+    <div class="bookcont">
+        <h1><u>Fill in this Booking Form</u></h1>
+        <label for="startdate">Number of Days</label>
+        <input type="number" name="" id="noofdays" placeholder="Number of days" required>
+        <h2><u>Available Hotels</u></h2>
+        <button id="addhotelbtn" class="tourplus">Add Hotel</button>
+        <div class="availhotellst">
+            <div class="availhotel">
+                <!-- <div class="hotelinfo">
+                    <p id="noofdays">Name of Hotel:</p>
+                    <p id="pricehotel">Price of Hotel:</p>
+                    <div class="starrate"><p>Rating:</p>
+                        <span class="star">&#9733</span>
+                        <span class="star">&#9733</span>
+                        <span class="star">&#9733</span>
+                        <span class="star">&#9733</span>
+                    </div>
+                </div>
+                <div class="hotelinfoimg">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/13/09/06/travel-1737168_640.jpg" alt="" class="hotelimg">
+                </div> -->
+                <p></p>
+            </div>
+        </div>
+            <button type="submit" class="bookingformbtn" id="booktourhotel">Book</button>
+    </div>
+    <div id="addhotelForm" style="display: none;">
+        <p><u><strong>ADD HOTEL FORM</strong></u></p>
+        <input type="hidden" id="addhotelId" required>
+        <label for="addHotelName">Name:</label>
+        <input type="text" id="addHotelName" required>
+        <label for="addHotelLocation">Location:</label>
+        <input type="text" id="addHotelLocation" required>
+        <label for="addHotelRating">Rating:</label>
+        <input type="text" id="addHotelRating" required>
+        <button id="submitAddHotel">Add Hotel</button>
+        <div id="addHotelMessage"></div>
+    </div>
+    <!-- Update Tour Form (hidden by default) -->
+    <div id="updateHotelForm" style="display: none;">
+        <p><u><strong>UPDATE HOTEL FORM</strong></u></p>
+        <input type="hidden" id="updateHotelId">
+        <input type="hidden" id="updatedhotelId" required>
+        <label for="updatedHotelName">Name:</label>
+        <input type="text" id="updatedHotelName" required>
+        <label for="updatedHotelLocation">Location:</label>
+        <input type="text" id="updatedTourLocation" required>
+        <label for="updatedHotelRating">Rating:</label>
+        <input type="text" id="updatedHotelRating" required>
+        <button id="submitUpdate">Update Tour</button>
+        <div id="updateHotelMessage"></div>
+    </div>
+</body>
+</html>

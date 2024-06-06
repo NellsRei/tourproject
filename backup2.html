@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="/dist/tours.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>VOYAGE ON</h1></a>
+        <div class="headeritems">
+            <a href="tour.html">Tour Listing</a>
+            <a href="hotel.html">Hotel Listing</a>
+            <a href="booking.html">Book With Us</a>
+        </div>
+        <p class="username"></p>
+    </header>
+    <div class="tourtext">
+        <p>Select a tour and see the available hotels. Book with us today and get to enjoy a beautiful vacation </p>
+        <button id="addtourbtn" class="tourplus">Add tour</button>
+    </div>
+    <div class="tours">
+        <!-- <div class="tourscards">
+            <div class="toursimg">
+                <img src="https://cdn.pixabay.com/photo/2020/02/06/18/43/santorini-4825173_640.jpg" alt="">
+            </div>
+            <div id="pin"><img src="/img/pin-location.png" alt="" class="pin"><h2>Santorini Tour</h2></div>
+            <p>Santorini,Greece</p>
+            <div id="pin"><img src="img/location_for_desc.png" alt="" class="pin"><p>Description: Santorini, Greece is a beautiful city with beautiful buildings and clear oceans</p></div>
+            <p>Price:100,000ksh</p>
+            <a href="booking.html">Book Tour</a>
+        </div>
+        <div class="tourscards">
+            <div class="toursimg">
+                <img src="https://cdn.pixabay.com/photo/2020/02/06/18/43/santorini-4825173_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2020/10/14/19/49/santorini-5655299_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2015/08/24/20/11/greece-905559_640.jpg" alt="" srcset="">
+            </div>
+            <div id="pin"><img src="/img/pin-location.png" alt="" class="pin"><h2>Santorini Tour</h2></div>
+            <div id="pin"><img src="img/location_for_desc.png" alt="" class="pin"><p>Description: Santorini, Greece is a beautiful city with beautiful buildings and clear oceans</p></div>
+            <p>Price:100,000ksh</p>
+            <a href="booking.html">Book Tour</a>
+        </div> -->
+    </div>
+    <div class="add-tour-form" style="display: none;" id="tourplus">
+        <div class="addtourerrormess"></div>
+        <form class="addt">
+            <h1><u>ADD TOUR FORM</u></h1>
+            <label for="tourimage"><p>Tour Image</p></label>
+            <input type="text" name="tourimage" id="tourimage" placeholder="Tour Image">
+            <label for="tourname"><p>Tour name</p></label>
+            <input type="text" name="username" id="tourname" placeholder="Tour Name">
+            <label for="tourdest"><p>Tour destination</p></label>
+            <input type="text" name="destination" id="tourdest" placeholder="Tour Destination">
+            <label for="description"><p>Description</p></label>
+            <input type="text" name="description" id="description" placeholder="Description">
+            <label for="price"><p>Price</p></label>
+            <input type="number" name="price" id="price" placeholder="Price" class="sign-up">
+            <button type="submit" id="addtourformbtn">Add Tour</button>
+        </form>
+    </div>
+</body>
+</html>

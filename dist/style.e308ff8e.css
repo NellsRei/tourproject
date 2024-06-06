@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 200;
+    font-size: medium;
+
+}
+header{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header h1{
+    padding: 10px;
+}
+.headeritems{
+    display: flex;
+    flex-direction: row; 
+    padding: 5px;
+    gap: 20px;
+    align-self: center;
+    justify-content: center;
+    margin-right: 0;
+    font-size: x-large;
+
+}
+.headeritems a{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;  
+}
+.headeritems a:hover{
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: gainsboro;
+    padding: 5px;
+    text-decoration: none;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    padding-right: 50px;
+    gap: 20px;
+}
+.userimage{
+    height: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.contimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://cdn.pixabay.com/photo/2021/07/26/07/32/travel-6493621_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: ghostwhite;
+    font-size: xx-large;
+}
+.container h1{
+    padding: 10px;
+}
+.conttour, .conthotel{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.tourcard, .hotelcard{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(176, 224, 230);
+    height:350px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 5px lightblue
+}
+
+.tourcard p, .hotelcard p{
+    padding: 5px;
+    text-align: center;
+}
+.starrate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.star{
+    color: yellow;
+    font-size: larger;
+}
+.avail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: x-large;
+    background-color: rgb(176, 224, 230);
+}
+.avail ul li{
+    list-style: none;
+    padding: 2px;
+    text-align: center;
+}
+.tourcard:hover, .hotelcard:hover{
+    transform: translateY(-10px);
+}
+.conttour a, .conthotel a{
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    align-self: center;
+}
+/* for tour html */
+.tourtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tourplus{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: medium;
+    display: none;
+
+}
+.tourplus:hover{
+    background-color: lightblue;
+}
+.tours{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.tourscard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20rem;
+    gap: 2px;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(176, 224, 230);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px lightblue
+}
+.tourscard button{
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: center;
+}
+.tourscard button:hover{
+    background-color: lightblue;
+}
+.tourscard img{
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
+.tourscard h2,p {
+    text-align: justify;
+    font-size: large;
+    padding: 5px;
+
+}
+/* for the booking form */
+.fform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    font-size: x-large;
+}
+.bookcont{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 10px;
+    height: 80%;
+    width: 60vw;
+    font-size: x-large;
+    color: black;
+    gap: 20px; 
+}
+.bookcont h1{
+    text-align: center;
+}
+.bookcont input, label{
+    font-size: x-large;
+    width: 300px;
+}
+.availhotellst{
+    display: flex;
+    flex-direction: row;
+}
+.availhotel{
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(176, 224, 230);
+    border-radius: 20px;
+}
+.starrate{
+    margin-left: 0%;
+}
+.hotelinfoimg img{
+    height: 200px;
+
+}
+.total{
+    font-size: x-large;
+}
+.book button, .book{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: medium;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0%;
+}
+.book button:hover{
+    background-color: lightblue;
+}
+/* for the sign-up form */
+.sign-log-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    font-size: x-large;
+}
+.sign {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    height: 60%;
+    width: 60vw;
+    font-size: x-large;
+    color: black;
+    gap: 10px;
+    margin-top: 0px;
+}
+.sign-up {
+    height: 50px;
+}
+.sign input {
+    font-size: medium;
+}
+.signbtn {
+    align-self: center;
+    margin-top: 50px;
+    height: 80px;
+    width: 50%;
+    font-size: large;
+    border-radius: 15px;
+}
+.signbtn:hover{
+    background-color: lightblue;
+}
+.sign-log-form a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+}
+.sign-log-form a:hover{
+    background-color: lightblue;
+}
+.sign h1{
+    text-align: center;
+    padding: 10px;
+}
+.errormessage, .addhotelerrormess,.addtourerrormess, .tourerr{
+    margin-top: 30px;
+    padding: 10px;
+    height: 40px;
+    color: white;
+    width: 65%;
+    justify-content: center;
+}
+.add-tour-form{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    height: 30rem;
+    background-color: lightskyblue;
+    margin: auto;
+    width: 70%;
+}
+.addt{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    /* align-items: center; */
+    padding: 10px;
+    justify-content: center;
+}
+.addt input{
+    line-height: 10px;   
+}
+.addt button{
+    margin: 10px auto;
+    width: 30%;
+}
+#updateTourForm, #addTourForm{
+    border: 1px solid lightskyblue;
+    padding: 10px;
+    font-size: smaller ;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 10px 10px 5px lightblue;
+    align-items: center;
+}
+#updateTourForm p, #addTourForm p{
+    text-align: center;
+}
+/* for accoun deletion */
+username {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px lightskyblue;
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.username:hover .dropdown-content {
+    display: block;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
